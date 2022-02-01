@@ -10,7 +10,6 @@ export class HashHistory extends History {
         }
         const router = router;
         const handleRoutingEvent = (e) => {
-            console.log('popstate', e)
             // 父类base的跳转方法
             this.transitionTo(getHash(), (route) => {
                 // 完成后同步同步更新下url地址
